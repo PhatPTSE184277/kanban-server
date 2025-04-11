@@ -13,6 +13,7 @@ const UserShema = new mongoose.Schema({
         type: String,
         required: true,
     },
+    photoUrl: String,
     rule: {
         type: Number,
         default: 1

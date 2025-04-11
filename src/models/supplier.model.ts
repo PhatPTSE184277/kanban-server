@@ -17,7 +17,13 @@ const SupplierShema = new Schema({
         default: 0,
         enum: [0, 1],
     },
-    photoUrl: String
+    email: String,
+	active: Number,
+    photoUrl: String,
+    isDeleted: {
+        type: Boolean,
+        default: false
+    }
 }, {
     timestamps: true
 })
